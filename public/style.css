@@ -1,0 +1,27 @@
+body {
+    margin: 0
+}
+header {
+    /*background-color: #FAF6FA;*/
+    background-color: #4ECCA3;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+#site-name {
+    font-weight: 700;
+}
+header .pretty-text {
+    color: #EDE9ED;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+}
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.pages {
+    margin-right: 3rem;
+}
