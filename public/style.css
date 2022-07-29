@@ -3,15 +3,16 @@ body {
 }
 header {
     /*background-color: #FAF6FA;*/
-    background-color: #4ECCA3;
+    background-color: #2aaa80;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
+
 }
 #site-name {
     font-weight: 700;
 }
-header .pretty-text {
+.pretty-text {
     color: #EDE9ED;
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
@@ -24,4 +25,14 @@ header .pretty-text {
 }
 .pages {
     margin-right: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    background-color: #2aaa80;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
