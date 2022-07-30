@@ -58,8 +58,10 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
-.create-node {
+.main-content {
+    margin: 4rem 20%;
+}
+.create-node-block {
     display: flex;
     justify-content: center;
     flex-direction: column;
