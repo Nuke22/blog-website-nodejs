@@ -22,9 +22,13 @@ header {
 }
 .highlighted-text {
     color: #394648;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .casual-text {
-    color: #CBAC88;
+    color: #394648;
+    font-weight: normal;
+    font-size: 1rem;
 }
 .header-right {
     display: flex;

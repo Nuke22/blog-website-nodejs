@@ -14,8 +14,8 @@
 <div class="main-content">
     <%for (const title in data) {%>
     <div class="node">
-        <h1><%=title%></h1>
-        <h3><%=data[title]%></h3>
+        <h1 class="pretty-text highlighted-text"><%=title%></h1>
+        <h3 class="pretty-text casual-text" style="margin-bottom: 4rem;"><%=data[title]%></h3>
     </div>
     <%}%>
 </div>

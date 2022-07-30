@@ -12,14 +12,21 @@
 <%- include("header")%>
 
 <div class="main-content">
-    <div class="create-node-block">
-        <input type="text"
-               name="title"
-               class="create-node pretty-text highlighted-text"
-               placeholder="title"
-               style="margin-bottom: 2rem">
-        <textarea name="text" cols="40" rows="5" class="create-node pretty-text casual-text" placeholder="text"></textarea>
-</div>
+    <form method="post" action="/create-node">
+        <div class="create-node-block">
+            <input type="text"
+                   name="title"
+                   class="create-node pretty-text highlighted-text"
+                   placeholder="title"
+                   style="margin-bottom: 2rem">
+            <textarea name="text"
+                      cols="40"
+                      rows="5"
+                      class="create-node pretty-text casual-text"
+                      placeholder="text"></textarea>
+            <button type="submit">Create article!</button>
+        </div>
+    </form>
 </div>
 <%- include("footer")%>
 </body>
