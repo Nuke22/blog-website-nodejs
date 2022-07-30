@@ -1,5 +1,6 @@
 body {
-    margin: 0
+    margin: 0;
+    background-color: #F7F3E9;
 }
 header {
     /*background-color: #FAF6FA;*/
@@ -13,11 +14,17 @@ header {
     font-weight: 700;
 }
 .pretty-text {
-    color: #EDE9ED;
+    color: #F8E9E9;
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
     font-size: 1.5rem;
     text-decoration: none;
+}
+.highlighted-text {
+    color: #394648;
+}
+.casual-text {
+    color: #CBAC88;
 }
 .header-right {
     display: flex;
@@ -38,4 +45,22 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+#create-content {
+    position: absolute;
+    background-color: #2aaa80;
+    border-radius: 50%;
+    bottom: 6rem;
+    right: 4rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-node {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

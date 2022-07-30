@@ -22,6 +22,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("*", (req, res) => {
     let options = {}
+    let renderContent = true
+    console.log(req.url)
     switch (req.url) {
         case "/":
             options = {data: dataArray}
@@ -33,11 +35,18 @@ app.get("*", (req, res) => {
             options = {data: contactUs}
             break
         case "/create-node":
-            options = //todo: page for creation nodes
+            renderContent = false
+            res.render("create-node")
+            break
+        case "/favicon.ico":
+            renderContent = false
+            break
         default:
             //todo: new nodes catch by adding their titles into the array
     }
-    res.render("index", options);
+    if (renderContent) {
+        res.render("index", options)
+    }
 
 })
 // res.render("index")
