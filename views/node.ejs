@@ -6,22 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <%- include("head");%>
-    <title>Blog</title>
+    <title><%=data.title%>></title>
 </head>
 <body>
 <%- include("header")%>
-
 <div class="main-content">
-    <% for (let i = 0; i < data.length; i++) {%>
     <div class="node">
-        <%%>
-    <h1 class="pretty-text highlighted-text"><%=data[i].title%></h1>
-        <h3 class="pretty-text casual-text" style="margin-bottom: 4rem;"><%=data[i].text%></h3>
-        <a href="<%=data[i].route%>">clickme!!</a>
-
-        <a href="/oh">alt link</a>  <!--delete me asap-->
+        <h1 class="pretty-text highlighted-text"><%=data.title%></h1>
+        <h3 class="pretty-text casual-text" style="margin-bottom: 4rem;"><%=data.text%></h3>
     </div>
-<%}%>
 </div>
 
 <%- include("footer")%>

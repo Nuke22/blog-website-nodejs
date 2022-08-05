@@ -70,3 +70,9 @@ footer {
     justify-content: center;
     flex-direction: column;
 }
+
+button {
+    width: 10rem;
+    height: 2rem;
+    margin: 2rem auto;
+}
